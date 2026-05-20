@@ -1,0 +1,165 @@
+/* ── Utility / page-specific classes (replaces all inline styles) ── */
+
+/* Backgrounds */
+.bg-cream  { background: var(--cream) }
+.bg-white  { background: var(--white) }
+.bg-dark   { background: var(--dark) }
+.bg-beige  { background: var(--beige) }
+.bg-beige2 { background: var(--beige2) }
+
+/* Text alignment */
+.text-center { text-align: center }
+.text-left   { text-align: left }
+
+/* Eyebrow colour variants */
+.eyebrow-pale   { color: var(--gold-p) }
+.eyebrow-light  { color: var(--gold-l) }
+
+/* Section header block */
+.section-header { text-align: center; margin-bottom: 46px }
+
+/* Narrow wrap */
+.wrap-sm  { max-width: 700px }
+.wrap-xsm { max-width: 680px }
+
+/* Centred divider */
+.divider-center { margin: 18px auto }
+
+/* Form layouts */
+.form-col   { display: flex; flex-direction: column; gap: 18px }
+.form-col-t { display: flex; flex-direction: column; gap: 18px; margin-top: 30px }
+
+/* Intro paragraph below a heading */
+.form-intro {
+  font-size: .89rem;
+  color: var(--textl);
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+.info-intro {
+  font-size: .91rem;
+  color: var(--textl);
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+/* Price summary box */
+.price-box { background: var(--beige); padding: 13px 18px; font-size: .9rem; color: var(--textl) }
+.price-val { color: var(--gold); font-family: Georgia, 'Times New Roman', serif; font-size: 1.1rem }
+
+/* Align button to start of flex column */
+.btn-start { align-self: flex-start }
+
+/* Spa image */
+.spa-side-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block }
+
+/* Booking page */
+.page-bg-cream { background: var(--cream) }
+
+.page-header { text-align: center; margin-bottom: 44px }
+
+.page-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--dark);
+  font-weight: 600;
+}
+.page-title em { font-style: italic; color: var(--gold) }
+
+.booking-form { display: flex; flex-direction: column; gap: 18px }
+
+.pay-summary {
+  background: var(--beige);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-size: .92rem;
+  color: var(--text);
+}
+
+.total-input {
+  background: var(--beige2) !important;
+  color: var(--gold) !important;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 1.1rem !important;
+}
+
+.step-card-mt { margin-top: 24px }
+.step-card-success { margin-top: 24px; text-align: center }
+
+.success-icon { font-size: 3rem; margin-bottom: 18px }
+.success-h2   { margin-bottom: 10px }
+.success-msg  { margin-bottom: 22px; font-size: .94rem; color: var(--textl) }
+
+/* Nav book-now active state */
+.nav-btn-active { background: var(--dark) }
+
+/* Entertainment hero */
+.ent-hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1600&q=80');
+}
+
+/* Dine hero */
+.dine-hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80');
+}
+
+/* Contact page */
+.contact-hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1600&q=80');
+  height: 42vh;
+}
+
+.ct-form-success {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.success-email-icon { font-size: 2.5rem; margin-bottom: 16px }
+.success-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+.success-text { font-size: .9rem; color: var(--textl); font-weight: 300; margin-bottom: 26px }
+
+.msg-textarea { height: 130px; resize: vertical }
+
+.ql-links-mt { margin-top: 40px }
+
+/* Dine confirm */
+.confirm-wrap { text-align: left; padding-top: 20px }
+
+/* Offer msg highlight */
+.offer-highlight { color: var(--gold); font-size: .85rem }
+
+/* ── About page ── */
+.about-hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1600&q=80');
+}
+.pg-hero-cnt { position: relative; z-index: 1; text-align: center; padding: 0 24px }
+.about-p      { margin-bottom: 18px }
+.about-body-p { font-size: .92rem; color: var(--textl); font-weight: 300; max-width: 520px; margin-bottom: 18px }
+.stats-hdr    { text-align: center; margin-bottom: 52px }
+.val-hdr      { text-align: center; max-width: 620px; margin: 0 auto 52px }
+
+/* ── Rooms page ── */
+.rooms-hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1600&q=80');
+}
+.rooms-hdr  { margin-bottom: 52px }
+.rooms-sub  { margin: 0 auto }
+.room-badge-dark { background: var(--dark); color: var(--gold-l) }
+.room-btn   { padding: 9px 20px; font-size: .72rem }
+.offers-hdr { text-align: center; margin-bottom: 46px }
+.offers-cta { margin-top: 46px }
+
+/* ── Home page ── */
+.hero-btn   { font-size: .84rem; padding: 16px 44px; letter-spacing: 3px }
+.wc-text-gap { margin-bottom: 18px }
+.wc-sub-text { font-size: .88rem; color: var(--textl); font-weight: 300; max-width: 480px; margin-bottom: 34px }
+.wc-btns    { display: flex; gap: 14px; flex-wrap: wrap }
+.ql-heading { margin: 0 auto 38px }
+
+/* ── Heading colour variants ── */
+.heading-white { color: var(--white); margin: 0 auto }
