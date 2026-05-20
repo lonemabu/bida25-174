@@ -1,0 +1,47 @@
+/* ── CONTACT PAGE STYLES ── */
+
+/* Hero background */
+.contact-hero-bg{
+  background-image:url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1600&q=80');
+  height:42vh;
+}
+
+/* Contact info + form layout */
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+
+/* Info list */
+.ct-info-list{display:flex;flex-direction:column;gap:26px;margin-top:28px}
+.ct-info-item{display:flex;align-items:flex-start;gap:16px}
+.ct-icon{width:42px;height:42px;background:var(--gold);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:1.08rem;flex-shrink:0}
+.ct-info-item strong{display:block;font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.ct-info-item p{font-size:.93rem;color:var(--text)}
+.ct-info-item a{color:var(--text);text-decoration:none}
+.ct-info-item a:hover{color:var(--gold)}
+
+/* Quick links */
+.ql-links-mt{margin-top:40px}
+.ql-links ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.ql-links h4{font-family:Georgia,'Times New Roman',serif;font-size:1.28rem;color:var(--dark);margin-bottom:18px}
+.ql-links a{font-size:.87rem;color:var(--textl);text-decoration:none;transition:color .3s;display:flex;align-items:center;gap:7px}
+.ql-links a::before{content:'→';color:var(--gold)}
+.ql-links a:hover{color:var(--gold)}
+
+/* Contact form box */
+.ct-form-box{background:var(--white);padding:46px;border-top:4px solid var(--gold)}
+.ct-form-box h3{font-family:Georgia,'Times New Roman',serif;font-size:1.55rem;color:var(--dark);margin:10px 0 26px}
+.ct-form{display:flex;flex-direction:column;gap:16px}
+.msg-textarea{height:130px;resize:vertical}
+
+/* Success state */
+.ct-form-success{text-align:center;padding-top:64px;padding-bottom:64px}
+.success-email-icon{font-size:2.5rem;margin-bottom:16px}
+.success-title{font-family:Georgia,'Times New Roman',serif;font-size:1.4rem;color:var(--dark);margin-bottom:10px}
+.success-text{font-size:.9rem;color:var(--textl);font-weight:300;margin-bottom:26px}
+
+/* Responsive */
+@media(max-width:1024px){
+  .ct-grid{grid-template-columns:1fr;gap:44px}
+}
+@media(max-width:768px){
+  .ct-form-box{padding:30px 22px}
+}

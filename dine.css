@@ -1,0 +1,28 @@
+/* ── DINE PAGE STYLES ── */
+
+/* Hero background */
+.dine-hero-bg{
+  background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80');
+}
+
+/* Reservation section */
+.dine-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.dine-img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.dine-form{display:flex;flex-direction:column;gap:18px}
+.confirm-wrap{text-align:left;padding-top:20px}
+.offer-highlight{color:var(--gold);font-size:.85rem}
+
+/* Dining venues */
+.venues-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.venue-card{background:var(--white);padding:34px 26px;text-align:center}
+.venue-icon{font-size:1.9rem;display:block;margin-bottom:12px}
+.venue-card h4{font-family:Georgia,'Times New Roman',serif;font-size:1.12rem;color:var(--dark);margin-bottom:8px}
+.venue-card p{font-size:.83rem;color:var(--textl);font-weight:300}
+
+/* Responsive */
+@media(max-width:1024px){
+  .dine-grid{grid-template-columns:1fr;gap:44px}
+}
+@media(max-width:768px){
+  .venues-grid{grid-template-columns:1fr}
+}

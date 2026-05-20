@@ -1,47 +1,157 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>My First GitHub Page</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lone Aura Retreat — Home</title>
+  <link rel="stylesheet" href="./page-styles.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/home.css" />
 </head>
-
 <body>
 
-<header>
+<nav>
+  <a href="index.html" class="nav-logo">LONE <span>AURA</span> RETREAT</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="entertainment.html">Entertainment</a></li>
+    <li><a href="rooms.html">Suite& Rooms</a></li>
+    <li><a href="dine.html">Dine</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="booking.html" class="nav-btn">Book Now</a>
+</nav>
 
-<h1>Welcome to My Website!</h1>
+<div class="page">
 
-</header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-ov"></div>
+    <div class="hero-cnt">
+      <div class="hero-badge"><span>Awarded Best Hotel in the Country</span></div>
+      <h1>Lone <em>Aura</em> Retreat</h1>
+      <p class="motto">;Your Space. Your Aura;</p>
+      <a href="booking.html" class="btn btn-gold" style="font-size:.84rem;padding:16px 44px;letter-spacing:3px">Book Now</a>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
+  <!-- HIGHLIGHTS -->
+  <section class="sec-sm" style="background:var(--cream)">
+    <div class="hl-grid">
+      <div class="hl-item">
+        <h4>Award-Winning</h4>
+        <p>Voted Best Hotel in the Country for exceptional standards.</p>
+      </div>
+      <div class="hl-item">
+        <h4>Breathtaking Views</h4>
+        <p>Every suite frames a landscape that takes your breath away.</p>
+      </div>
+      <div class="hl-item">
+        <h4>Luxury Spa</h4>
+        <p>Massages, mud pools, and total relaxation await you.</p>
+      </div>
+      <div class="hl-item">
+        <h4>Casino; Lounge</h4>
+        <p>World-class casino open daily from 7:00 AM to midnight.</p>
+      </div>
+    </div>
+  </section>
 
-<main>
+  <!-- WELCOME -->
+  <section class="sec" style="background:var(--white)">
+    <div class="wrap">
+      <div class="wc-grid">
+        <div class="wc-img-wrap">
+          <img class="wc-main" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=500&q=80" alt="Lone Aura Retreat" />
+          <img class="wc-float" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=500&q=80" alt="Spa" />
+        </div>
+        <div>
+          <span class="gold-pill">Welcome</span>
+          <span class="eyebrow">A World Apart</span>
+          <h2 class="heading">Where Stillness Becomes a <em>Luxury</em></h2>
+          <div class="divider"></div>
+          <p class="subtext" style="margin-bottom:18px">
+            Lone Aura Retreat is more than a hotel; it is a sanctuary designed to restore
+            your sense of self. Nestled in secluded grandeur, we offer an escape that blends
+            timeless elegance with the warmth of genuine hospitality.
+          </p>
+          <p style="font-size:.88rem;color:var(--textl);font-weight:300;max-width:480px;margin-bottom:34px">
+            With over 20 years of crafting extraordinary stays, every detail is curated to ensure
+            your time here becomes one of life's most cherished memories.
+          </p>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a href="about.html" class="btn btn-gold">Discover Our Story</a>
+            <a href="rooms.html" class="btn btn-out">View Suites</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p>This is a simple webpage hosted on GitHub Pages.</p>
+  <!-- QUICK LINKS -->
+  <section class="sec" style="background:var(--beige2)">
+    <div class="wrap" style="text-align:center">
+      <span class="eyebrow">Explore the Retreat</span>
+      <h2 class="heading" style="margin:0 auto 38px">Everything You <em>Need</em></h2>
+      <div class="ql-grid">
+        <a class="ql-item" href="entertainment.html">
+          <div class="ql-ov"><span>Entertainment</span></div>
+        </a>
+        <a class="ql-item" href="dine.html">
+          <div class="ql-ov"><span>Dine</span></div>
+        </a>
+        <a class="ql-item" href="rooms.html">
+          <div class="ql-ov"><span>Suites& Rooms</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<p>Here's a picture of a cute cat:</p>
-
-<img src="https://placekitten.com/200/300" alt="A cute kitten">
-
-
-<p>Visit <a href="https://github.com">GitHub</a> to learn more about coding.</p>
-
-</main>
-
+</div>
 
 <footer>
-
-<p>&copy; 2025 Your Name</p>
-
+  <div class="ft-inner">
+    <div>
+      <span class="ft-logo">LONE AURA RETREAT</span>
+      <p class="ft-tag">Your Space. Your Aura. A sanctuary crafted for those who seek the extraordinary.</p>
+    </div>
+    <div class="ft-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="rooms.html">Suites& Rooms</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Experience</h5>
+      <ul>
+        <li><a href="dine.html">Dine</a></li>
+        <li><a href="booking.html">Bookings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="entertainment.html">Spa & Casino</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:info@loneauraretreat.com">Loneauraretreat.com</a></li>
+        <li><a href="tel:06243876">75130208</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <p> 2026 Lone Aura Retreat. All rights reserved.</p>
+    <p>Where silence speaks luxury.</p>
+  </div>
 </footer>
 
-
 </body>
-
 </html>

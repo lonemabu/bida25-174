@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lone Aura Retreat — Contact</title>
+  <link rel="stylesheet" href="./page-styles.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">LONE <span>AURA</span> RETREAT</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="entertainment.html">Entertainment</a></li>
+    <li><a href="rooms.html">Suites &amp; Rooms</a></li>
+    <li><a href="dine.html">Dine</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <a href="booking.html" class="nav-btn">Book Now</a>
+</nav>
+
+<div class="page">
+
+  <!-- HERO -->
+  <div class="full-hero" style="background-image:url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1600&q=80');height:42vh">
+    <div class="full-hero-cnt">
+      <span class="eyebrow" style="color:var(--gold-p)">We&rsquo;d Love to Hear from You</span>
+      <h1>Contact Us</h1>
+    </div>
+  </div>
+
+  <!-- CONTACT BODY -->
+  <section class="sec" style="background:var(--cream)">
+    <div class="wrap">
+      <div class="ct-grid">
+
+        <!-- INFO -->
+        <div>
+          <span class="eyebrow">Get In Touch</span>
+          <h2 class="heading">Reach <em>Lone Aura</em> Retreat</h2>
+          <div class="divider"></div>
+          <p style="font-size:.91rem;color:var(--textl);font-weight:300;margin-bottom:8px">
+            Our concierge team is available around the clock to assist you with
+            reservations, enquiries, and special arrangements.
+          </p>
+
+          <div class="ct-info-list">
+            <div class="ct-info-item">
+              <div class="ct-icon"></div>
+              <div>
+                <strong>Website &amp; Email</strong>
+                <p><a href="http://loneauraretreat.com">Loneauraretreat.com</a></p>
+              </div>
+            </div>
+            <div class="ct-info-item">
+              <div class="ct-icon"></div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:75130208">75130208</a></p>
+              </div>
+            </div>
+            <div class="ct-info-item">
+              <div class="ct-icon"></div>
+              <div>
+                <strong>Reception Hours</strong>
+                <p>Open 24 hours &middot; 7 days a week</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUICK LINKS -->
+          <div class="ql-links" style="margin-top:40px">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="entertainment.html">Entertainment &amp; Spa</a></li>
+              <li><a href="rooms.html">Suites &amp; Rooms</a></li>
+              <li><a href="dine.html">Dine</a></li>
+              <li><a href="booking.html">Book Now</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div>
+          <div class="ct-form-box" id="formBox">
+            <span class="eyebrow">Send a Message</span>
+            <h3>How Can We Help?</h3>
+            <form class="ct-form" id="contactForm" onsubmit="sendMsg(event)">
+              <div class="frow">
+                <div class="fg">
+                  <label for="cName">Full Name</label>
+                  <input type="text" id="cName" placeholder="Your name" required />
+                </div>
+                <div class="fg">
+                  <label for="cEmail">Email</label>
+                  <input type="email" id="cEmail" placeholder="you@example.com" required />
+                </div>
+              </div>
+              <div class="fg">
+                <label for="cSubj">Subject</label>
+                <select id="cSubj">
+                  <option>General Enquiry</option>
+                  <option>Room Reservation</option>
+                  <option>Spa Booking</option>
+                  <option>Dining Reservation</option>
+                  <option>Events &amp; Corporate</option>
+                  <option>Feedback</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label for="cMsg">Message</label>
+                <textarea id="cMsg" placeholder="Tell us how we can assist you&hellip;" style="height:130px;resize:vertical" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold" style="align-self:flex-start">Send Message</button>
+            </form>
+          </div>
+
+          <!-- SUCCESS STATE -->
+          <div class="ct-form-box hidden" id="formSuccess" style="text-align:center;padding-top:64px;padding-bottom:64px">
+            <div style="font-size:2.5rem;margin-bottom:16px">&#9993;&#65039;</div>
+            <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--dark);margin-bottom:10px">Message Received</h4>
+            <p style="font-size:.9rem;color:var(--textl);font-weight:300;margin-bottom:26px">
+              Thank you for reaching out. Our team will respond within 24 hours.
+            </p>
+            <button class="btn btn-out" onclick="resetForm()">Send Another Message</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="ft-inner">
+    <div>
+      <span class="ft-logo">LONE AURA RETREAT</span>
+      <p class="ft-tag">Your Space. Your Aura. A sanctuary crafted for those who seek the extraordinary.</p>
+    </div>
+    <div class="ft-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="rooms.html">Suites &amp; Rooms</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Experience</h5>
+      <ul>
+        <li><a href="dine.html">Dine</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="entertainment.html">Spa &amp; Casino</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:info@loneauraretreat.com">Loneauraretreat.com</a></li>
+        <li><a href="tel:06243876">75130208</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <p>&copy; 2026 Lone Aura Retreat. All rights reserved.</p>
+    <p>Where silence speaks luxury.</p>
+  </div>
+</footer>
+
+<script>
+  function sendMsg(e) {
+    e.preventDefault();
+    document.getElementById("formBox").classList.add("hidden");
+    document.getElementById("formSuccess").classList.remove("hidden");
+  }
+
+  function resetForm() {
+    document.getElementById("contactForm").reset();
+    document.getElementById("formSuccess").classList.add("hidden");
+    document.getElementById("formBox").classList.remove("hidden");
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lone Aura Retreat — Entertainment</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href=".css/page-styles.css"/> 
+  <link rel="stylesheet" href="./css/entertainment.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">LONE <span>AURA</span> RETREAT</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="entertainment.html" class="active">Entertainment</a></li>
+    <li><a href="rooms.html">Suites &amp; Rooms</a></li>
+    <li><a href="dine.html">Dine</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="booking.html" class="nav-btn">Book Now</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<div class="page">
+
+  <!-- HERO -->
+  <div class="full-hero ent-hero-bg">
+    <div class="full-hero-cnt">
+      <span class="eyebrow eyebrow-pale">Indulge &amp; Unwind</span>
+      <h1>Entertainment</h1>
+      <p>Spa, relaxation pools &amp; world-class casino lounge</p>
+    </div>
+  </div>
+
+  <!-- SPA -->
+  <section class="sec bg-cream">
+    <div class="wrap">
+      <div class="spa-grid">
+        <div>
+          <span class="eyebrow">Lumi&egrave;re Spa</span>
+          <h2 class="heading">Restore. <em>Revive.</em> Relax.</h2>
+          <div class="divider"></div>
+          <p class="form-intro">
+            Surrender to the expert hands of our therapists in a sanctuary of warmth and calm.
+            Choose from three tailored massage durations, each designed to melt tension and restore your aura.
+          </p>
+
+          <table class="price-tbl">
+            <thead>
+              <tr>
+                <th>Duration</th>
+                <th>Treatment</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20 Minutes</td>
+                <td>Express Relaxation</td>
+                <td class="price">P200</td>
+              </tr>
+              <tr>
+                <td>30 Minutes</td>
+                <td>Deep Calm</td>
+                <td class="price">P300</td>
+              </tr>
+              <tr>
+                <td>60 Minutes</td>
+                <td>Full Aura Restore</td>
+                <td class="price">P400</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="spa-extras">
+            <div class="spa-extra">
+              <span></span>
+              <span><strong>Warm Mud Pool</strong> &mdash; soak in our naturally heated mineral mud pool to ease muscles and refresh the skin</span>
+            </div>
+            <div class="spa-extra">
+              <span></span>
+              <span><strong>Relaxation Lounge</strong> &mdash; serene seating areas designed purely for quiet rest and contemplation</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80" alt="Spa" class="spa-side-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASSAGE BOOKING -->
+  <section class="sec bg-white">
+    <div class="wrap wrap-sm">
+      <span class="eyebrow">Reserve Your Session</span>
+      <h2 class="heading">Book a <em>Massage</em></h2>
+      <div class="divider"></div>
+
+      <form id="massageForm" class="form-col-t">
+        <div class="frow">
+          <div class="fg">
+            <label for="mDate">Date</label>
+            <input type="date" id="mDate" required />
+          </div>
+          <div class="fg">
+            <label for="mTime">Preferred Time</label>
+            <select id="mTime" required>
+              <option value="">Select a time</option>
+              <option>09:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>02:00 PM</option>
+              <option>03:00 PM</option>
+              <option>04:00 PM</option>
+              <option>05:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg">
+          <label for="mDur">Massage Duration</label>
+          <select id="mDur">
+            <option value="P200">20 Minutes &mdash; P200</option>
+            <option value="P300">30 Minutes &mdash; P300</option>
+            <option value="P400">60 Minutes &mdash; P400</option>
+          </select>
+        </div>
+        <div class="price-box">
+          Session total: <strong id="priceDisplay" class="price-val">P200</strong>
+        </div>
+        <button type="submit" class="btn btn-gold btn-start">Book Session</button>
+        <div id="massageMsg" class="hidden"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CASINO -->
+  <section class="sec bg-dark">
+    <div class="wrap">
+      <div class="casino-grid">
+        <div>
+        </div>
+        <div class="casino-info">
+          <span class="eyebrow eyebrow-light">Casino &amp; Lounge</span>
+          <h3>The Aura Casino</h3>
+          <p>
+            Step into a world of elegance and excitement. The Aura Casino at Lone Aura Retreat
+            blends the thrill of world-class gaming with the refined atmosphere our guests have
+            come to expect. From classic table games to contemporary slots &mdash; an unforgettable
+            evening awaits.
+          </p>
+          <div class="casino-hrs">
+            <div>
+              <span class="casino-lbl">Open Daily</span>
+              <span class="casino-time">7:00 AM &mdash; 12:00 AM</span>
+            </div>
+          </div>
+          <p class="casino-note">Smart casual dress code required. Management reserves the right of entry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="ft-inner">
+    <div>
+      <span class="ft-logo">LONE AURA RETREAT</span>
+      <p class="ft-tag">Your Space. Your Aura. A sanctuary crafted for those who seek the extraordinary.</p>
+    </div>
+    <div class="ft-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="rooms.html">Suites &amp; Rooms</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Experience</h5>
+      <ul>
+        <li><a href="dine.html">Dine</a></li>
+        <li><a href="booking.html">Bookings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="entertainment.html">Spa &amp; Casino</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:info@loneauraretreat.com">Loneauraretreat.com</a></li>
+        <li><a href="tel:06243876">75130208</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <p>&copy; 2026 Lone Aura Retreat. All rights reserved.</p>
+    <p>Where silence speaks luxury.</p>
+  </div>
+</footer>
+
+<script src="./js/nav.js"></script>
+<script src="./js/entertainment.js"></script>
+
+</body>
+</html>

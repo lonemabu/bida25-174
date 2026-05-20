@@ -1,0 +1,36 @@
+/* ── BOOKINGS PAGE STYLES ── */
+
+/* Page header */
+.page-header{text-align:center;margin-bottom:44px}
+.page-title{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(2rem,4vw,3rem);
+  color:var(--dark);
+  font-weight:600;
+}
+.page-title em{font-style:italic;color:var(--gold)}
+
+/* Booking form card */
+.bk-card{background:var(--white);padding:52px;border-top:4px solid var(--gold);box-shadow:0 8px 48px rgba(0,0,0,.06);max-width:680px;margin:0 auto}
+.bk-card h2{font-family:Georgia,'Times New Roman',serif;font-size:1.9rem;color:var(--dark);margin-bottom:6px}
+.bk-card>p{font-size:.88rem;color:var(--textl);margin-bottom:28px}
+.nights-disp{background:var(--beige);border:1px solid var(--beige3);padding:13px 20px;font-size:.88rem;color:var(--textl);text-align:center}
+.nights-disp strong{color:var(--gold);font-family:Georgia,'Times New Roman',serif;font-size:1.18rem}
+
+/* Payment section */
+.pay-head{font-family:Georgia,'Times New Roman',serif;font-size:1.28rem;color:var(--dark);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--beige3)}
+.booking-form{display:flex;flex-direction:column;gap:18px}
+.pay-summary{background:var(--beige);padding:16px 20px;margin-bottom:24px;font-size:.92rem;color:var(--text)}
+.total-input{background:var(--beige2)!important;color:var(--gold)!important;font-family:Georgia,'Times New Roman',serif!important;font-size:1.1rem!important}
+
+/* Step cards */
+.step-card-mt{margin-top:24px}
+.step-card-success{margin-top:24px;text-align:center}
+.success-icon{font-size:3rem;margin-bottom:18px}
+.success-h2{margin-bottom:10px}
+.success-msg{margin-bottom:22px;font-size:.94rem;color:var(--textl)}
+
+/* Responsive */
+@media(max-width:768px){
+  .bk-card{padding:30px 22px}
+}
