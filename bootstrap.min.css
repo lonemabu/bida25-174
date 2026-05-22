@@ -1,0 +1,22 @@
+<!-- existing section -- >
+<section class="py-5">
+  <div class="container">
+    <h2>Some content here</h2>
+  </div>
+</section>
+
+<!-- your form below it — Bootstrap will still style it -->
+<section class="py-5">
+  <div class="container">
+    <form>
+      <label class="form-label" for="name">Your Name</label>
+      <input type="text" class="form-control" id="name" />
+
+      <label class="form-label" for="option">Pick One</label>
+      <select class="form-select" id="option">
+        <option>Option A</option>
+        <option>Option B</option>
+      </select>
+    </form>
+  </div>
+</section>
